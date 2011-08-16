@@ -27,6 +27,6 @@ See Jaech p. 185-186 equations 6.3.1 - 6.3.6.
 Estimated squared imprecisions (variances) for the ith iteration.
 }
 \references{ Jaech, J. L. (1985) \emph{Statistical Analysis of Measurement Errors}. New York: Wiley. }
-\author{ Richard A. Bilonick rab@nauticom.net }
+\author{ Richard A. Bilonick }
 
 \keyword{ htest }

@@ -125,7 +125,8 @@ function(x, beta=beta.bar(x),M=40,conf.level=0.95)
      sigma=c(sqrt(sigma2),sqrt(sigma.mu2)),se.sigma=se2.sigma2^(1/4),
      alpha.cb=c(alpha.cb,NA),alpha.ncb=c(alpha.ncb,NA),beta=c(beta,NA),
      df,chisq.l=qchisq(sig.level/2,df),
-     chisq.u=qchisq(1 - sig.level/2,df),lb=sqrt(lb),ub=sqrt(ub))
+     chisq.u=qchisq(1 - sig.level/2,df),lb=sqrt(lb),ub=sqrt(ub),
+     bias.adj.sigma=c(sqrt(sigma2)/beta,NA))
 
    dimnames(out)[[1]] <- c(dimnames(x)[[2]],"Process")
 
@@ -146,7 +147,9 @@ function(x, beta=beta.bar(x),M=40,conf.level=0.95)
 
    list(conf.level=conf.level,sigma.table=out,n.items=n,N.methods=N,sigma2=sigma2,sigma.mu2=sigma.mu2,
      se2.sigma2=se2.sigma2,alpha.cb=alpha.cb,alpha.ncb=alpha.ncb,
-     beta=beta,df=df,lb=sqrt(lb),ub=sqrt(ub),H=H,
+     beta=beta,df=df,lb=sqrt(lb),ub=sqrt(ub),
+     bias.adj.sigma=c(sqrt(sigma2)/beta,NA),
+     H=H,
      errors.nb=errors.nb,errors.cb=errors.cb,errors.ncb=errors.ncb)
 
 }

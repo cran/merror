@@ -25,7 +25,7 @@ See Jaech, pp. 204-205.
   \item{p.value }{Empirical significance level for the observed test statistic.'}
 }
 \references{ Jaech, J. L. (1985) \emph{Statistical Analysis of Measurement Errors}. New York: Wiley. }
-\author{ Richard A. Bilonick rab@nauticom.net }
+\author{ Richard A. Bilonick }
 
 \seealso{ \code{\link{ncb.od}},\code{\link{cb.pd}},\code{\link{pm2.5}} }
 \examples{

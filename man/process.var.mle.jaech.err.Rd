@@ -29,6 +29,6 @@ Jaech p. 288 line 2410 omits "- 1/d2".
 Estimated process variance but replicating minor error in Jaech's Fortran code.
 }
 \references{ Jaech, J. L. (1985) \emph{Statistical Analysis of Measurement Errors}. New York: Wiley. }
-\author{ Richard A. Bilonick rab@nauticom.net }
+\author{ Richard A. Bilonick }
 
 \keyword{ htest }

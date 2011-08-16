@@ -13,7 +13,7 @@ precision.grubbs.ncb.od(x, beta.bar.x = beta.bar(x))
 
 \arguments{
   \item{x}{ A matrix or numeric data.frame consisting of an n (no. of items) by N
-  (no. of methods) matrix of measuremnts. N must be greater than 3 and n > N. }
+  (no. of methods) matrix of measuremnts. N must be >= 3 and n > N. }
   \item{beta.bar.x}{ Either estimates of beta or hypothesized values (one for
   each method in an N vector). }
 }
@@ -24,7 +24,7 @@ See Jaech, p. 184.
 Grubbs' method of moments estimates of the squared imprecision (variances).
 }
 \references{ Jaech, J. L. (1985) \emph{Statistical Analysis of Measurement Errors}. New York: Wiley. }
-\author{ Richard A. Bilonick rab@nauticom.net }
+\author{ Richard A. Bilonick }
  
 \seealso{\code{\link{precision.grubbs.cb.pd}}, \code{\link{ncb.od}}, \code{\link{cb.pd}},\code{\link{lrt}} }
 

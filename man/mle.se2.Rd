@@ -24,6 +24,6 @@ Computes the squared standard errors for the squared precisions. Before calling 
 }
 \references{ J. L. Jaech, Statistical Analysis of Measurement Errors, Wiley, New
 York: 1985. }
-\author{ Richard A. Bilonick rab@nauticom.net }
+\author{ Richard A. Bilonick }
 
 \keyword{ htest }

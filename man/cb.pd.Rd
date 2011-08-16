@@ -12,7 +12,7 @@ cb.pd(x, conf.level = 0.95, M = 40)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
-  \item{x}{ n (no. of items) x N (no. of methods) matrix or data.frame containing the measurements. N must be greater than 3 and n > N.}
+  \item{x}{ n (no. of items) x N (no. of methods) matrix or data.frame containing the measurements. N must be >= 3 and n > N.}
   \item{conf.level}{ Chosen onfidence level. }
   \item{M}{ Maximum no.of iterations to reach convergence. }
 }
@@ -54,7 +54,7 @@ the process variance CANNOT be estimated.
   \item{ub }{N vector of upper bounds for confidence intervals}
 }
 \references{ Jaech, J. L. (1985) \emph{Statistical Analysis of Measurement Errors}. New York: Wiley. }
-\author{ Richard A. Bilonick rab@nauticom.net }
+\author{ Richard A. Bilonick }
 
 \seealso{ \code{\link{ncb.od}},
  \code{\link{lrt}}

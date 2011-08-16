@@ -25,6 +25,7 @@
 \examples{
 data(pm2.5)
 boxplot(pm2.5)
+merror.pairs(pm2.5)
 
 # estimates of accuracy and precision
 #   for nonconstant bias model using 

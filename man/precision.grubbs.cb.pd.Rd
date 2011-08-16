@@ -12,7 +12,7 @@ precision.grubbs.cb.pd(x)
 }
 \arguments{
   \item{x}{ A matrix or numeric data.frame consisting of an n (no. of items) by N
-  (no. of methods) matrix of measuremnts. N must be greater than 3 and n > N. }
+  (no. of methods) matrix of measuremnts. N must be >= 3 and n > N. }
 }
 \details{
 See Jaech 1985, Chapters 3 & 4, p. 144 in particular.
@@ -21,7 +21,7 @@ See Jaech 1985, Chapters 3 & 4, p. 144 in particular.
 Estimated squared imprecision estimates (variances).
 }
 \references{ Jaech, J. L. (1985) \emph{Statistical Analysis of Measurement Errors}. New York: Wiley.}
-\author{ Richard A. Bilonick rab@nauticom.net}
+\author{ Richard A. Bilonick }
  
 \seealso{ \code{\link{precision.grubbs.ncb.od}}, \code{\link{ncb.od}}, \code{\link{cb.pd}},\code{\link{lrt}} }
 

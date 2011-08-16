@@ -25,7 +25,7 @@ Estimated process variance.
 
 }
 \references{ Jaech, J. L. (1985) \emph{Statistical Analysis of Measurement Errors}. New York: Wiley. }
-\author{ Richard A. Bilonick rab@nauticom.net}
+\author{ Richard A. Bilonick }
 
 \keyword{ htest }
 

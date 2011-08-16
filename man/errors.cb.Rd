@@ -10,7 +10,7 @@ errors.cb(x)
 }
 \arguments{
   \item{x}{ A matrix or numeric data.frame consisting of an n (no. of items) by N
-  (no. of methods) matrix of measuremnts. N must be greater than 3 and n > N. }
+  (no. of methods) matrix of measuremnts. N must be >= 3 and n > N. }
 }
 \details{
 Errors should have a zero mean and should be Normally distributed with constant variance for a given method.
@@ -22,7 +22,7 @@ Errors should have a zero mean and should be Normally distributed with constant 
 \references{ Jaech, J. L. (1985) \emph{Statistical Analysis of Measurement Errors}. New York: Wiley
 
 . }
-\author{ Richard A. Bilonick rab@nauticom.net }
+\author{ Richard A. Bilonick }
 
 \seealso{ \code{\link{cb.pd}}, \code{\link{ncb.od}},\code{\link{lrt}} }
 \examples{
