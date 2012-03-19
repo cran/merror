@@ -18,8 +18,8 @@ function(x, beta=beta.bar(x),M=40,conf.level=0.95)
 #  Compute alphas for unconstrained betas (NCB) and betas=1 (CB) cases
 #    for completeness
 
-   alpha.cb  <- mean(x) - rep(1,N)*mean(mean(x))
-   alpha.ncb <- mean(x) - beta.bar(x)*mean(mean(x))
+   alpha.cb  <- colMeans(x) - rep(1,N)*mean(colMeans(x))
+   alpha.ncb <- colMeans(x) - beta.bar(x)*mean(colMeans(x))
 
 
    mles <- precision.mle.ncb.od(x, beta.bars=beta,M=M)
