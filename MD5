@@ -1,6 +1,5 @@
-b0732e7d659a66bb1448e312d7814b23 *DESCRIPTION
-ff0fa0ac8be616651d43413684cf269e *LICENSE
-9fdfeb11f7ddba6f3aab9aaa6b1ac5dd *NAMESPACE
+6e1e441746928442d213391b1dff6ee2 *DESCRIPTION
+cf9fff0a7629f75dfd9f2df6b46781ff *NAMESPACE
 ed2cec639749ee8870e7b5cc6de34f33 *R/beta.bar.R
 54c550430f81af0a5181d32109f00f07 *R/cb.pd.R
 a077de96d29810363b4b9df8ea34ef32 *R/cplot.R
@@ -15,13 +14,13 @@ bf52ca565ce413924d872ef1eae3964a *R/ncb.od.R
 459ec14e5a97ccb807195290abf94dff *R/panel.merror.R
 05d052021364829aad68d9fe29651be7 *R/precision.grubbs.cb.pd.R
 d48c2065c8e543481487185945dc6eba *R/precision.grubbs.ncb.od.R
-28447984100344a5ec2a65eee4f7427d *R/precision.mle.ncb.od.R
+6919efd5df77ab0972391262f5a81bec *R/precision.mle.ncb.od.R
 f005845e68ce2816a2f9f4e30c1553f5 *R/process.sd.R
 7ad5750bebe092662f51eedb33372fe4 *R/process.var.mle.R
 afedfe70be5afe5e2fac25cf70ff0172 *R/process.var.mle.jaech.err.R
-3233cb767c6a7cc2d8f8a419686313a4 *R/sigma.mle.R
+aa9459246a45e29830785dede7b5b506 *R/sigma_mle.R
 e7ee8f67aac4f997bd3e7904971511d9 *README
-a84ecd490c34bc51a90b3c9e721e92df *data/pm2.5.rda
+0cc8b0c1b5a1c69345ed068932a11ccc *data/pm2.5.rda
 4b891cf05f1039cbe773c7eac2580d97 *man/beta.bar.Rd
 8289c7881d7d150b57adbaf67a78b686 *man/cb.pd.Rd
 c599f5d407292c3efc00c9e66b80bad1 *man/cplot.Rd
@@ -41,4 +40,4 @@ d16af9979f8e7129f865ba50b6e7d867 *man/precision.mle.ncb.od.Rd
 315c62c7c4d345b8db22ad0e8e1b5e63 *man/process.sd.Rd
 6dec1fa2134d9364493f4da0863da0b8 *man/process.var.mle.Rd
 b5c4cebff90dfdbaa3f2c301fbeb4828 *man/process.var.mle.jaech.err.Rd
-b5724bcb3f9e7b83fa71eff497ea3bb7 *man/sigma.mle.Rd
+bb935263ee692a89901bfdfc5c71e40b *man/sigma_mle.Rd

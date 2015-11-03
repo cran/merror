@@ -50,7 +50,7 @@ function(x, M=20, beta.bars=beta.bar(x),jaech.errors=FALSE)
   {
     for(i in 1:N)
     {
-      sigma2[i] <- sigma.mle(i,s,sigma2,sigma.mu2,beta.bars,N,n)
+      sigma2[i] <- sigma_mle(i,s,sigma2,sigma.mu2,beta.bars,N,n)
 #      cat("\n","i=",i,"sigma2",sigma2)
     }
 #   cat("\n",m,"Sq.Prec.=",sigma2,"sigma.mu^2=",sigma.mu2)
