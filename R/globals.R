@@ -1,0 +1,1 @@
+utils::globalVariables(c("oneFactorModel", "sigma2", "ve1"))

@@ -18,8 +18,8 @@ cplot(df, i, j, leg.loc="topleft", regress=FALSE, lw=1, t.size=1, alpha.beta.sig
   \item{t.size}{ Text size.}
   \item{alpha.beta.sigma}{ By default, \code{cplot} computes the bias (alpha, beta) and
 imprecision (sigma) estimates using ncb.od. You can override this by specifying a
-3 x 2 matrix of values with alpha on the first row, beta on the second row, and
-sigma on the third row, in the same order as devices i and j.}
+3 x N matrix of values with alpha on the first row, beta on the second row, and
+sigma on the third row, in the same order as the methods.}
   
 }
 \details{By default, \code{cplot} displays the corresponding calibration curve for
@@ -29,7 +29,7 @@ alpha.beta.sigma with different estimates. Both naive regression lines (device i
 regressed on device j, and device j regressed on device i) by setting "regress=TRUE". 
 Note, however, that the calibration curve will fall somewhere between these two
 regression lines, depending on the the ratio of the imprecision standard deviations
-(sigma's).
+(sigmas). (This may not hold if there are missing measurement data values given that ordinary regression requires deleting any item with one or more missing values.)
 }
 \value{
 Produces a scatter plot with the calibration curve and titles that includes the
@@ -41,6 +41,7 @@ calibration equation and the scale-bias adjusted imprecision standard deviations
 \seealso{ \code{\link{merror.pairs} }}
 \examples{
 
+library(merror)
 data(pm2.5)
 
 # Make various calibration plots for pm2.5 measurements
@@ -61,6 +62,21 @@ alpha.beta.sigma <- t(data.frame(a,b,s))
 
 cplot(pm2.5,2,1,alpha.beta.sigma=alpha.beta.sigma)
 cplot(pm2.5,2,1,alpha.beta.sigma=alpha.beta.sigma,regress=TRUE)
+data(pm2.5)
+
+\dontrun{
+# Use omx function to specify the data for alpha.beta.sigma
+pm <- pm2.5
+
+# omx uses OpenMx which does not like periods in data column names
+names(pm) <- c('ms_conc_1','ws_conc_1','ms_conc_2','ws_conc_2','frm')
+
+# Fit one-factor measurement error model with FRM sampler as reference
+omxfit <- omx(data=pm[,c(5,1:4)],bs.q=c(0.025,0.5,0.975),reps=100)
+
+# Make a calibration plot using the results from omx instead of the default ncb.od
+cplot(pm[,c(5,1:4)],1,2,alpha.beta.sigma=omxfit$abs)
+}
 
 
 }
